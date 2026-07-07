@@ -1,0 +1,369 @@
+/* Beginner Friendly CSS - Static & Simple */
+:root {
+    /* Color Palette */
+    --bg-dark: #080D18;
+    --bg-panel: #0F1A2E;
+    --accent-cyan: #4EE2D6;
+    --text-primary: #EAF0F6;
+    --text-secondary: #8291A8;
+    --border-dim: #1e2c45;
+
+    /* Typography */
+    --font-heading: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    line-height: 1.6;
+}
+
+.app-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Typography Utility */
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--text-primary);
+}
+
+.tag, .stat-label, .stat-sub, .tech-stack span, .chip, .time-meta, .section-title {
+    font-family: var(--font-mono);
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: 1px solid var(--border-dim);
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--accent-cyan);
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav a:hover {
+    color: var(--accent-cyan);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-family: var(--font-mono);
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--accent-cyan);
+    color: var(--bg-dark);
+    border: none;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #3bc7bb;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--accent-cyan);
+    border: 1px solid var(--accent-cyan);
+}
+
+.btn-outline:hover {
+    background-color: var(--bg-panel);
+}
+
+/* Panels */
+.panel {
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-dim);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+/* Sections */
+.section {
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: 24px;
+    color: var(--accent-cyan);
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--border-dim);
+    padding-bottom: 10px;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 0;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.tag {
+    color: var(--accent-cyan);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.hero-title {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-family: var(--font-mono);
+    font-size: 18px;
+    color: #FF7A59;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 18px;
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.hero-visual {
+    width: 300px;
+    height: 300px;
+    background-color: var(--bg-panel);
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--accent-cyan);
+}
+
+.hero-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* About Grid */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.about-bio p {
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+}
+
+.about-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 20px;
+}
+
+.stat-value {
+    font-family: var(--font-heading);
+    font-size: 40px;
+    color: var(--accent-cyan);
+    margin: 10px 0;
+}
+
+.stat-sub {
+    color: var(--text-secondary);
+    font-size: 12px;
+}
+
+/* Timeline */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.time-meta {
+    color: var(--accent-cyan);
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.time-role {
+    margin-bottom: 10px;
+}
+
+.timeline-item p {
+    color: var(--text-secondary);
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card.flagship {
+    grid-column: 1 / -1;
+    border-left: 4px solid var(--accent-cyan);
+}
+
+.project-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.project-desc {
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech-stack span {
+    background-color: var(--bg-dark);
+    color: var(--accent-cyan);
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    border: 1px solid var(--border-dim);
+}
+
+/* Skills Panel */
+.skills-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.skill-category {
+    width: 100px;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.skill-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.chip {
+    padding: 5px 15px;
+    background-color: var(--bg-dark);
+    border: 1px solid var(--border-dim);
+    color: var(--text-primary);
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+}
+
+.contact-headline {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.contact-text {
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 40px 0;
+    color: var(--text-secondary);
+    border-top: 1px solid var(--border-dim);
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-actions {
+        justify-content: center;
+    }
+    
+    .about-grid, .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skill-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
