@@ -10,349 +10,409 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@500;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@700&family=Space+Grotesk:wght@700;800&display=swap"
         rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <!-- Main Container -->
-    <div class="app-container">
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="logo">M.S</div>
+        <nav class="nav">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#awards">Awards</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-        <!-- Navigation -->
-        <header class="header">
-            <div class="logo">M.S</div>
-            <nav class="nav">
-                <a href="#about">About</a>
-                <a href="#education">Education</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#awards">Awards</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
+    <div class="container">
 
         <!-- Hero Section -->
-        <section class="hero-section" id="hero">
-            <div class="hero-content">
-                <div class="tag">KOCHI, KERALA — 9.9312°N 76.2673°E</div>
-                <h1 class="hero-title">MEGHA SURESH.</h1>
-                <p class="hero-subtitle">Web Developer & IT Student @ CUSAT</p>
-                <p class="hero-description">I am an enthusiastic IT student with a strong passion for web development. I love building clean, user-friendly websites and exploring new technologies to turn creative ideas into real-world projects.</p>
+        <section class="hero" id="hero">
+            <div class="hero-text">
+                <span class="badge yellow">📍 KOCHI, KERALA</span>
+                <h1>MEGHA SURESH</h1>
+                <p class="subtitle">Full Stack & IoT Developer @ CUSAT</p>
+                <p class="bio">Hi! I am a 3rd-year Information Technology student at CUSAT. I build web apps, hardware
+                    enthusiastic, and enjoy building cool stuffs!</p>
 
-                <div class="hero-actions">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-yellow"> Projects</a>
+                    <a href="#contact" class="btn btn-cyan"> Contact Me</a>
                 </div>
             </div>
 
-            <div class="hero-visual">
-                <img src="profile.jpeg" alt="Megha Suresh" class="hero-photo" />
+            <div class="hero-image">
+                <img src="profile.png" alt="Megha Suresh">
+
             </div>
         </section>
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+            <div class="stat-card yellow">
+                <h2>8.3</h2>
+                <p>CGPA in B.Tech IT</p>
+            </div>
+            <div class="stat-card cyan">
+                <h2>3rd</h2>
+                <p>Year Student @ CUSAT</p>
+            </div>
+            <div class="stat-card lime">
+                <h2>9+</h2>
+                <p>Projects Completed</p>
+            </div>
+            <div class="stat-card pink">
+                <h2>3+</h2>
+                <p>Hackathon Wins</p>
+            </div>
+        </div>
 
         <!-- About Section -->
         <section class="section" id="about">
             <h2 class="section-title">01. About Me</h2>
-
-            <div class="about-grid">
-                <div class="about-bio panel">
-                    <p>I am a third-year B.Tech Information Technology student at CUSAT, specializing in IoT and
-                        full-stack development. My passion lies in building systems that work where the internet
-                        doesn't.</p>
-                    <p>My flagship project involves developing a LoRa mesh safety network for fishermen, ensuring
-                        reliable communication in deep-sea environments. I thrive at the intersection of embedded
-                        hardware and scalable web backends.</p>
-                </div>
-
-                <div class="about-stats">
-                    <div class="stat-card panel">
-                        <span class="stat-label">CGPA</span>
-                        <div class="stat-value">8.3</div>
-                        <span class="stat-sub">/ 10.0</span>
-                    </div>
-                    <div class="stat-card panel">
-                        <span class="stat-label">YEAR</span>
-                        <div class="stat-value">3</div>
-                        <span class="stat-sub">B.Tech IT</span>
-                    </div>
-                    <div class="stat-card panel">
-                        <span class="stat-label">PROJECTS</span>
-                        <div class="stat-value">9+</div>
-                        <span class="stat-sub">Completed</span>
-                    </div>
-                    <div class="stat-card panel">
-                        <span class="stat-label">AWARDS</span>
-                        <div class="stat-value">5+</div>
-                        <span class="stat-sub">Hackathons</span>
-                    </div>
+            <div class="card">
+                <p>I am an IT engineering student who loves turning ideas into real working code. My main focus is
+                    full-stack web development and embedded IoT devices that help solve practical challenges.</p>
+                <div class="tags">
+                    <span class="tag">Full-Stack Web</span>
+                    <span class="tag">IoT Devices</span>
+                    <span class="tag">LoRa Mesh</span>
+                    <span class="tag">Python & JavaScript</span>
                 </div>
             </div>
         </section>
 
-        <!-- Education Section -->
-        <section class="section" id="education">
-            <h2 class="section-title">02. Education</h2>
-
-            <div class="timeline">
-                <div class="timeline-item panel">
-                    <div class="time-meta">THIRD YEAR // KOCHI, INDIA</div>
-                    <h3 class="time-role">B.Tech in Information Technology</h3>
-                    <p>School of Engineering, CUSAT (Cochin University of Science and Technology)</p>
-                    <p style="margin-top: 10px; color: var(--accent-cyan);">CGPA: 8.3 / 10</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
+        <!-- Experience Section (Interactive 3D Flip Cards on Timeline) -->
         <section class="section" id="experience">
-            <h2 class="section-title">03. Work Experience</h2>
+            <h2 class="section-title">02. Work Experience</h2>
 
             <div class="timeline">
-                <div class="timeline-item panel">
-                    <div class="time-meta">TEDX CUSAT</div>
-                    <h3 class="time-role">Web Developer</h3>
-                    <p>Serving as Web Developer for TEDx CUSAT, responsible for building and maintaining the event website and web-based experiences.</p>
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <span class="badge cyan">TEDX CUSAT</span>
+                                <h3>Web Developer</h3>
+
+                            </div>
+                            <div class="flip-card-back">
+                                <h4>Web Developer @ TEDx CUSAT</h4>
+                                <p>Built and managed the official website for TEDx CUSAT. Handled design updates,
+                                    speaker info pages, and online registration forms for event attendees.</p>
+                                <div class="tags">
+                                    <span class="tag">HTML/CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">UI Design</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="timeline-item panel">
-                    <div class="time-meta">NAVODITA INFOTECH</div>
-                    <h3 class="time-role">Full Stack Developer Intern</h3>
-                    <p>Contributed to end-to-end web application development spanning frontend interfaces and backend services.</p>
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <span class="badge yellow">NAVODITA INFOTECH</span>
+                                <h3>Full Stack Developer Intern</h3>
+
+                            </div>
+                            <div class="flip-card-back">
+                                <h4>Full Stack Intern @ Navodita</h4>
+                                <p>Worked on real-world client web applications during my internship. Created responsive
+                                    web interfaces and connected frontend components to SQL database backends.</p>
+                                <div class="tags">
+                                    <span class="tag">Web Dev</span>
+                                    <span class="tag">SQL</span>
+                                    <span class="tag">APIs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="timeline-item panel">
-                    <div class="time-meta">IIIT KOTTAYAM — GYAAN LAB</div>
-                    <h3 class="time-role">Cloud Computing Intern</h3>
-                    <p>Completed an internship focused on cloud computing at the GYAAN Lab, gaining exposure to cloud architectures, deployment models, and applied cloud computing concepts.</p>
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <span class="badge lime">IIIT KOTTAYAM — GYAAN LAB</span>
+                                <h3>Cloud Computing Intern</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h4>Cloud Intern @ GYAAN Lab</h4>
+                                <p>Learned core cloud infrastructure concepts at GYAAN Lab. Worked with virtual
+                                    machines, containerizing web apps, and setting up basic cloud deployments.</p>
+                                <div class="tags">
+                                    <span class="tag">AWS</span>
+                                    <span class="tag">Containers</span>
+                                    <span class="tag">Cloud Arch</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="timeline-item panel">
-                    <div class="time-meta">IN PROGRESS</div>
-                    <h3 class="time-role">MATLAB Intern</h3>
-                    <p>Working with MATLAB for technical computing and engineering problem solving. Exploring data visualization, algorithm implementation, and analytical computing. Applying programming concepts for numerical and technical applications.</p>
+                <!-- Timeline Item 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <span class="badge pink">MATLAB INTERNSHIP</span>
+                                <h3>MATLAB Intern</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h4>MATLAB Technical Computing</h4>
+                                <p>Hands-on engineering problem solving with MATLAB. Built algorithms for numerical
+                                    analysis, data visualization, and technical computing.</p>
+                                <div class="tags">
+                                    <span class="tag">MATLAB</span>
+                                    <span class="tag">Algorithms</span>
+                                    <span class="tag">Data Analysis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="timeline-item panel">
-                    <div class="time-meta">PERSONAL / ACADEMIC PROJECTS</div>
-                    <h3 class="time-role">Frontend & Backend Developer (Full Stack)</h3>
-                    <p>Developed responsive user interfaces using HTML, CSS, and JavaScript. Built backend services and APIs using Python and Node.js. Worked on full-stack development integrating frontend with databases and backend logic. Designed clean UI/UX and optimized application performance.</p>
+                <!-- Timeline Item 5 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <span class="badge yellow">ACADEMIC & FREELANCE</span>
+                                <h3>Full Stack Developer</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h4>Full Stack & IoT Projects</h4>
+                                <p>Built 9+ web and hardware projects during college. Designed user interfaces with
+                                    HTML/CSS/JS and created REST APIs using Python and Node.js.</p>
+                                <div class="tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">Node.js</span>
+                                    <span class="tag">React</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Projects Section -->
         <section class="section" id="projects">
-            <h2 class="section-title">04. Projects</h2>
-
+            <h2 class="section-title">03. Featured Projects</h2>
             <div class="projects-grid">
-                <!-- Flagship Project -->
-                <div class="project-card panel flagship">
-                    <div class="project-content">
-                        <h3 class="project-title">KadalYatri – Offline Mesh Safety Network for Fishers</h3>
-                        <p class="project-desc">
-                            Designed a hardware-software bridge for zero-connectivity environments, using a decentralized sub-GHz mesh network where every boat acts as a data hop. Addressed the "Invisible Fleet" problem and built a Digital Twin software ecosystem for real-time tracking and alerts.
-                            <br><br>🏆 1st Place Winner, FOUNDRY Product Hunt by CUSAT
-                        </p>
-                        <div class="tech-stack">
-                            <span>ESP32</span>
-                            <span>LoRa</span>
-                            <span>NavIC</span>
-                            <span>React / PWA</span>
-                            <span>Firestore</span>
-                        </div>
+                <div class="card flagship">
+                    <span class="badge yellow">🏆 1ST PLACE WINNER</span>
+                    <h3>KadalYatri – Offline Mesh Safety Network</h3>
+                    <p>Built an offline LoRa mesh safety network for deep-sea fishers working without mobile signal.
+                        Helps track boat locations and send emergency alerts back to shore.</p>
+                    <div class="tags">
+                        <span class="tag">ESP32</span>
+                        <span class="tag">LoRa</span>
+                        <span class="tag">NavIC</span>
+                        <span class="tag">React / PWA</span>
+                        <span class="tag">Firestore</span>
                     </div>
                 </div>
 
-                <!-- Secondary Projects -->
-                <div class="project-card panel">
-                    <h3 class="project-title">AgriPilot</h3>
-                    <p class="project-desc">Low-Cost GNSS Guidance System for Precision Agriculture. Developed a dual-receiver system with real-time reliability scoring. Achieved cost-efficient design compared to traditional RTK systems.<br><br>🏆 Top 3 in HackEuropa</p>
-                    <div class="tech-stack">
-                        <span>ESP32</span>
-                        <span>Raspberry Pi</span>
-                        <span>Python</span>
-                        <span>GNSS</span>
+                <div class="card">
+                    <span class="badge cyan">🏆 TOP 3 HACKEUROPA</span>
+                    <h3>AgriPilot</h3>
+                    <p>Low-cost dual-receiver GNSS guidance system for precision farming with real-time tractor
+                        positioning.</p>
+                    <div class="tags">
+                        <span class="tag">ESP32</span>
+                        <span class="tag">Raspberry Pi</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">GNSS</span>
                     </div>
                 </div>
 
-                <div class="project-card panel">
-                    <h3 class="project-title">TrueSpice</h3>
-                    <p class="project-desc">AI-Powered Spice Purity Scanner. Designed a portable AI-based system to detect adulteration in spices using optical sensing and image analysis with spectroscopy sensors.<br><br>🏆 2nd Place, Vismayam Ideathon</p>
-                    <div class="tech-stack">
-                        <span>Python</span>
-                        <span>Computer Vision</span>
-                        <span>Machine Learning</span>
+                <div class="card">
+                    <span class="badge pink">🏆 2ND PLACE VISMAYAM</span>
+                    <h3>TrueSpice</h3>
+                    <p>Portable AI tool that tests spice purity using optical sensors and computer vision to spot
+                        adulteration.</p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">OpenCV</span>
+                        <span class="tag">Machine Learning</span>
                     </div>
                 </div>
 
-                <div class="project-card panel">
-                    <h3 class="project-title">Nomadica</h3>
-                    <p class="project-desc">Location-Based Travel Planner recommending destinations based on user location via Geolocation API and Haversine formula.<br><br>🏆 Best Project, TinkerHer Hackathon</p>
-                    <div class="tech-stack">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
+                <div class="card">
+                    <span class="badge lime">🏆 BEST PROJECT TINKERHER</span>
+                    <h3>Nomadica</h3>
+                    <p>Smart travel planner that recommends nearby destinations using your live browser location.</p>
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
                     </div>
                 </div>
 
-                <div class="project-card panel">
-                    <h3 class="project-title">SpotAble</h3>
-                    <p class="project-desc">Local Worker Discovery Platform. Built a location-based platform to discover nearby informal workers using interactive maps and ratings.</p>
-                    <div class="tech-stack">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                        <span>Supabase</span>
-                        <span>Leaflet</span>
+                <div class="card">
+                    <h3>SpotAble</h3>
+                    <p>A location-based website helping people discover and hire local daily-wage workers using
+                        interactive maps.</p>
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Supabase</span>
+                        <span class="tag">Leaflet</span>
                     </div>
                 </div>
 
-                <div class="project-card panel">
-                    <h3 class="project-title">Smart Backend Rule Engine</h3>
-                    <p class="project-desc">AI-powered backend automation platform converting natural language rules into structured JSON using AI for automated decision logic.</p>
-                    <div class="tech-stack">
-                        <span>Python</span>
-                        <span>FastAPI</span>
-                        <span>Google Gemini AI</span>
+                <div class="card">
+                    <h3>Smart Backend Rule Engine</h3>
+                    <p>An AI automation tool that turns plain English rules into clean structured JSON logic for
+                        backends.</p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">Gemini AI</span>
                     </div>
                 </div>
 
-                <div class="project-card panel">
-                    <h3 class="project-title">EcoVision</h3>
-                    <p class="project-desc">Smart Surveillance with Motion-Based Video Optimization. Developed a motion detection system using OpenCV background subtraction to reduce CCTV storage usage.</p>
-                    <div class="tech-stack">
-                        <span>Python</span>
-                        <span>OpenCV</span>
-                        <span>NumPy</span>
+                <div class="card">
+                    <h3>EcoVision</h3>
+                    <p>Smart CCTV video optimizer that only records when motion is detected to save disk space.</p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">OpenCV</span>
+                        <span class="tag">NumPy</span>
                     </div>
                 </div>
 
-                <div class="project-card panel">
-                    <h3 class="project-title">CUSAFE</h3>
-                    <p class="project-desc">Campus Safety Website designed for reporting incidents and accessing emergency contacts, featuring a WhatsApp-based emergency feature.</p>
-                    <div class="tech-stack">
-                        <span>Web Platform</span>
-                        <span>UI/UX</span>
+                <div class="card">
+                    <h3>CUSAFE</h3>
+                    <p>Campus safety portal for reporting student safety incidents with a one-click emergency WhatsApp
+                        trigger.</p>
+                    <div class="tags">
+                        <span class="tag">Web Platform</span>
+                        <span class="tag">UI/UX</span>
                     </div>
                 </div>
 
-                <div class="project-card panel">
-                    <h3 class="project-title">Patience-O-Meter</h3>
-                    <p class="project-desc">Interactive Web Experience. A playful web application testing user patience through UI challenges like reverse typing and moving buttons.</p>
-                    <div class="tech-stack">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
+                <div class="card">
+                    <h3>Patience-O-Meter</h3>
+                    <p>A fun web game that tests your patience with tricky buttons and reverse typing challenges.</p>
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Skills Section -->
+        <!-- Technical Skills Section -->
         <section class="section" id="skills">
-            <h2 class="section-title">05. Technical Skills</h2>
-
-            <div class="skills-panel panel">
-                <div class="skill-row">
-                    <div class="skill-category">Languages</div>
-                    <div class="skill-chips">
-                        <span class="chip">C</span>
-                        <span class="chip">C++</span>
-                        <span class="chip">JavaScript</span>
-                        <span class="chip">Python</span>
-                    </div>
+            <h2 class="section-title">04. Technical Skills</h2>
+            <div class="card stack-skills">
+                <div class="skill-group">
+                    <strong>Languages:</strong> C, C++, JavaScript, Python
                 </div>
-                <div class="skill-row">
-                    <div class="skill-category">Frontend</div>
-                    <div class="skill-chips">
-                        <span class="chip">HTML</span>
-                        <span class="chip">CSS</span>
-                        <span class="chip">JavaScript</span>
-                        <span class="chip">React</span>
-                    </div>
+                <div class="skill-group">
+                    <strong>Frontend:</strong> HTML, CSS, JavaScript, React
                 </div>
-                <div class="skill-row">
-                    <div class="skill-category">Backend & DB</div>
-                    <div class="skill-chips">
-                        <span class="chip">Node.js</span>
-                        <span class="chip">MySQL</span>
-                        <span class="chip">PostgreSQL</span>
-                    </div>
+                <div class="skill-group">
+                    <strong>Backend & DB:</strong> Node.js, MySQL, PostgreSQL
                 </div>
-                <div class="skill-row">
-                    <div class="skill-category">Cloud</div>
-                    <div class="skill-chips">
-                        <span class="chip">AWS (EC2, ECS, RDS, Aurora)</span>
-                    </div>
+                <div class="skill-group">
+                    <strong>Cloud & Hardware:</strong> AWS (EC2, ECS, RDS), ESP32, Raspberry Pi
                 </div>
-                <div class="skill-row">
-                    <div class="skill-category">Tools</div>
-                    <div class="skill-chips">
-                        <span class="chip">OpenCV</span>
-                        <span class="chip">Supabase</span>
-                        <span class="chip">Leaflet</span>
-                        <span class="chip">Git</span>
-                        <span class="chip">GitHub</span>
-                        <span class="chip">VS Code</span>
-                    </div>
-                </div>
-                <div class="skill-row">
-                    <div class="skill-category" style="width: 150px;">Core Strengths</div>
-                    <div class="skill-chips">
-                        <span class="chip">Rapid Prototyping</span>
-                        <span class="chip">Creative Problem Solving</span>
-                        <span class="chip">UI/UX Experimentation</span>
-                    </div>
+                <div class="skill-group">
+                    <strong>Tools:</strong> OpenCV, Supabase, Leaflet, Git, GitHub
                 </div>
             </div>
         </section>
 
         <!-- Awards Section -->
         <section class="section" id="awards">
-            <h2 class="section-title">06. Honours and Awards</h2>
+            <h2 class="section-title">05. Honours & Awards</h2>
+            <div class="awards-grid">
+                <div class="card award">
+                    <span>🏆</span>
+                    <div>
+                        <h4>1st Place — FOUNDRY Product Hunt</h4>
+                        <p>KadalYatri offline mesh network project.</p>
+                    </div>
+                </div>
+                <div class="card award">
+                    <span>🥈</span>
+                    <div>
+                        <h4>2nd Place — Vismayam Ideathon</h4>
+                        <p>TrueSpice AI spice purity scanner.</p>
+                    </div>
+                </div>
+                <div class="card award">
+                    <span>🏅</span>
+                    <div>
+                        <h4>Top 3 — HackEuropa</h4>
+                        <p>AgriPilot dual-receiver GNSS system.</p>
+                    </div>
+                </div>
+                <div class="card award">
 
-            <div class="timeline">
-                <div class="timeline-item panel" style="padding: 20px;">
-                    <ul style="color: var(--text-secondary); line-height: 1.8; list-style-position: inside;">
-                        <li><strong>1st Place Winner</strong> — FOUNDRY Product Hunt by CUSAT (KadalYatri).</li>
-                        <li><strong>Tech Team Member</strong> at Students for the Exploration and Development of Space (SEDS).</li>
-                        <li><strong>Web Associate</strong> for IEEE CUSAT SB.</li>
-                        <li><strong>Web Developer</strong> for TEDx CUSAT.</li>
-                        <li><strong>Organizer</strong> for MAKE A TON Hackathon.</li>
-                        <li><strong>2nd Place</strong> — Vismayam Ideathon (TrueSpice).</li>
-                        <li><strong>Top 3 Position</strong> in HackEuropa Hackathon (CUSAT).</li>
-                        <li><strong>Best Project</strong> — TinkerHer Hackathon by TinkerHub Foundation (Nomadica).</li>
-                        <li>Participated in <strong>Global Game Jam</strong>.</li>
-                        <li>Participated in <strong>IEEE InnoBot Hackathon</strong>.</li>
-                    </ul>
+                    <div>
+                        <h4>Best Project — TinkerHer Hackathon</h4>
+                        <p>Nomadica travel recommendation app.</p>
+                    </div>
+                </div>
+                <div class="card award">
+
+                    <div>
+                        <h4>Web Developer — TEDx CUSAT</h4>
+                        <p>Built web platforms for TEDx CUSAT.</p>
+                    </div>
+                </div>
+                <div class="card award">
+
+                    <div>
+                        <h4>Tech Team Member — SEDS CUSAT</h4>
+                        <p>Space Exploration & Development Society.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section class="section contact-section" id="contact">
-            <h2 class="section-title">07. Contact</h2>
-
-            <div class="contact-panel panel">
-                <h2 class="contact-headline">Let's Connect</h2>
-                <p class="contact-text">Looking to build resilient hardware systems or scalable software? Feel free to
-                    reach out to me.</p>
-
-                <div class="contact-links">
-                    <button onclick="window.location.href='mailto:meghasuresh200420@gmail.com'" class="btn btn-primary">Email Me</button>
-                    <button onclick="window.open('https://github.com/Meghaa-sys', '_blank')" class="btn btn-outline">GitHub</button>
-                    <button onclick="window.open('https://www.linkedin.com/in/megha-suresh-a9a815329', '_blank')" class="btn btn-outline">LinkedIn</button>
-                </div>
+        <section class="section contact-card" id="contact">
+            <h2>LET'S CONNECT </h2>
+            <p>I am always open to discussing web projects, IoT systems, or internship opportunities.</p>
+            <div class="contact-btns">
+                <a href="mailto:meghasuresh200420@gmail.com" class="btn btn-cyan"> Email Me</a>
+                <a href="https://github.com/Meghaa-sys" target="_blank" class="btn btn-lime"> GitHub</a>
+                <a href="https://www.linkedin.com/in/megha-suresh-a9a815329" target="_blank" class="btn btn-pink">
+                    LinkedIn</a>
             </div>
         </section>
 
+        <!-- Footer -->
         <footer class="footer">
-            <p>© 2026 Megha Suresh. Built with HTML & CSS.</p>
+            <p>© 2026 Megha Suresh. </p>
         </footer>
 
     </div>
